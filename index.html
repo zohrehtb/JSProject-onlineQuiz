@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Exam Page</title>
+</head>
+<body> 
+    <main>
+        <div id="start-page" class="show start-page">
+            <h2 class="start-page__title">شروع امتحان</h2>
+            <div id="start-exam" class="button button-start">شروع</div>
+        </div>
+
+        <div id="exam-module" class="hidden">
+            <div class="container question">
+                <div class="question__title">
+                    <h2 id="title"></h2>
+                </div>
+                <div class="question__counter">
+                        <div id="counter" class="counter"></div>
+                        <div class="slide-progress-bar">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                    </div>
+                <div class="question__answers">
+                    <div id="buttons"></div>
+                </div>
+                <ul id="pager"></ul>
+            </div>
+        </div>
+
+        <div id="end-page" class="hidden end-page">
+            <div id="exam-response"></div>
+            <div id="start-again" class="button button-start">دوباره تلاش کن</div>
+        </div>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
